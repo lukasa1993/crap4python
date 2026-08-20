@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crap4python"
+version = "0.1.0"
+description = "CRAP metric for Python functions"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "lukasa1993"}]
+keywords = ["crap", "complexity", "coverage", "quality", "testing"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+crap4python = "crap4python.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
